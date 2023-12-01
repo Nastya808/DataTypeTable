@@ -1,0 +1,47 @@
+﻿<Window x:Class="DataTypeTable.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Data Types Table" Height="400" Width="600">
+    <Grid>
+        <FlowDocumentReader>
+            <FlowDocument>
+                <Paragraph>
+                    <Table BorderBrush="Black" BorderThickness="1">
+                        <Table.Columns>
+                            <TableColumn Width="100" />
+                            <TableColumn Width="200" />
+                            <TableColumn Width="100" />
+                        </Table.Columns>
+                        <TableRowGroup>
+                            <TableRow>
+                                <TableCell><Paragraph>Тип данных</Paragraph></TableCell>
+                                <TableCell><Paragraph>Диапазон значений</Paragraph></TableCell>
+                                <TableCell><Paragraph>Размер памяти</Paragraph></TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell><Paragraph>int</Paragraph></TableCell>
+                                <TableCell><Paragraph>-2,147,483,648 to 2,147,483,647</Paragraph></TableCell>
+                                <TableCell><Paragraph>4 байта</Paragraph></TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell><Paragraph>float</Paragraph></TableCell>
+                                <TableCell><Paragraph>-3.4 x 10^38 to 3.4 x 10^38</Paragraph></TableCell>
+                                <TableCell><Paragraph>4 байта</Paragraph></TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell><Paragraph>double</Paragraph></TableCell>
+                                <TableCell><Paragraph>-1.7 x 10^308 to 1.7 x 10^308</Paragraph></TableCell>
+                                <TableCell><Paragraph>8 байт</Paragraph></TableCell>
+                            </TableRow>
+                            <TableRow>
+                                <TableCell><Paragraph>string</Paragraph></TableCell>
+                                <TableCell><Paragraph>Зависит от длины строки</Paragraph></TableCell>
+                                <TableCell><Paragraph>4 байта (плюс длина строки)</Paragraph></TableCell>
+                            </TableRow>
+                        </TableRowGroup>
+                    </Table>
+                </Paragraph>
+            </FlowDocument>
+        </FlowDocumentReader>
+    </Grid>
+</Window>
